@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miCompose"
+        android:icon="@drawable/vector_compose_shortcut"
+        app:showAsAction="ifRoom"
+        android:onClick="onComposeAction"
+        android:title="Compose">
+    </item>
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/profile_avatar"
+        app:showAsAction="ifRoom|withText"
+        android:title="Profile">
+    </item>
+    <item
+        android:id="@+id/miActionProgress"
+        android:title="Loading..."
+        android:visible="false"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        app:actionLayout="@layout/action_view_progress" />
+</menu>
